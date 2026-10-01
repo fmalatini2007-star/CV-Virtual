@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta_title">Portafolio | Desarrollador Full Stack</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" data-i18n="nav_about">Sobre Mí</a>
+        <a href="#skills" data-i18n="nav_skills">Habilidades</a>
+        <a href="#projects" data-i18n="nav_projects">Proyectos</a>
+        <a href="#education" data-i18n="nav_education">Educación</a>
+        <a href="#contact" data-i18n="nav_contact">Contacto</a>
+      </nav>
+
+      <div class="nav-controls">
+        <!-- Switcher Idioma -->
+        <button id="lang-toggle" class="btn-control" aria-label="Cambiar Idioma">
+          <span id="lang-label">EN</span>
+        </button>
+
+        <!-- Switcher Tema -->
+        <button id="theme-toggle" class="btn-control" aria-label="Cambiar Tema">
+          <span id="theme-icon">🌙</span>
+        </button>
+
+        <!-- Menú Hamburguesa (Mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section">
+      <div class="container">
+        <span class="badge badge-accent" data-i18n="hero_badge">Disponible para oportunidades</span>
+        <h1 class="hero-title">
+          <span data-i18n="hero_greeting">Hola, soy</span> <span class="highlight">Facundo Malatini</span>
+        </h1>
+        <h2 class="hero-subtitle" data-i18n="hero_subtitle">Desarrollador Full Stack</h2>
+        <p class="hero-description" data-i18n="hero_desc">
+          Técnico en Programación & Estudiante de Ingeniería en Sistemas (UTN). Especializado en arquitectura de software, integración de IA, APIs en tiempo real y protocolos de comunicación.
+        </p>
+
+        <div class="hero-actions">
+          <a href="assets/docs/CV_Espanol.pdf" id="cv-download" class="btn btn-primary" download target="_blank" data-i18n="hero_cv_btn">
+            📄 Descargar CV
+          </a>
+          <a href="#projects" class="btn btn-secondary" data-i18n="hero_projects_btn">
+            Ver Proyectos
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/MalaaPro69" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>
+          <span>•</span>
+          <a href="http://www.linkedin.com/in/facundo-malatini" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <span>•</span>
+          <a href="tel:+5493584184346" aria-label="Teléfono">Teléfono</a>
+          <span>•</span>
+          <span>Email: facu.552007@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about_title">Sobre Mí</h2>
+        <div class="card about-card">
+          <p data-i18n="about_p1">
+            Soy Técnico en Programación egresado del ITAPU y actualmente me encuentro cursando la carrera de Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional (UTN).
+          </p>
+          <p data-i18n="about_p2">
+            Me apasiona construir soluciones tecnológicas robustas que resuelvan problemas reales de negocio. Mi experiencia abarca desde el desarrollo de sistemas de gestión integrales (ERP) y procesamiento de datos mediante Inteligencia Artificial, hasta la integración de protocolos de comunicación con dispositivos físicos (RFID).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES TÉCNICAS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="skills_title">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+          
+          <div class="card skill-card">
+            <h3 data-i18n="skill_cat_backend">Backend & Arquitectura</h3>
+            <ul class="tag-list">
+              <li>Node.js / Express</li>
+              <li>Python</li>
+              <li>REST APIs</li>
+              <li>Protocolos de Red</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h3 data-i18n="skill_cat_frontend">Frontend & UI/UX</h3>
+            <ul class="tag-list">
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>HTML5 / CSS3</li>
+              <li>Tailwind CSS</li>
+              <li>Gráficos Interactivos</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h3 data-i18n="skill_cat_database">Bases de Datos & Tools</h3>
+            <ul class="tag-list">
+              <li>SQL (PostgreSQL / MySQL)</li>
+              <li>Git & GitHub</li>
+              <li>Docker</li>
+              <li>Postman</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h3 data-i18n="skill_cat_integrations">Integraciones Avanzadas</h3>
+            <ul class="tag-list">
+              <li>APIs de IA / LLMs</li>
+              <li>APIs Financieras / Brokers</li>
+              <li>Hardware RFID</li>
+              <li>Extracción Fiscal (OCR/IA)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="projects_title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+
+          <!-- Proyecto 1: Cuentita -->
+          <article class="card project-card">
+            <div class="project-content">
+              <span class="project-category" data-i18n="proj1_cat">Finanzas & IA</span>
+              <h3 class="project-title">Cuentita</h3>
+              <p class="project-description" data-i18n="proj1_desc">
+                Aplicación web con integración de IA para registrar gastos diarios mediante lenguaje natural. Genera gráficos mensuales en tiempo real, compara ingresos/egresos y gestiona inversiones conectándose con APIs de brokers para cotizaciones en vivo.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Full Stack</span>
+                <span class="tag">AI Integration</span>
+                <span class="tag">Broker APIs</span>
+                <span class="tag">Real-Time Charts</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Facturas IA -->
+          <article class="card project-card">
+            <div class="project-content">
+              <span class="project-category" data-i18n="proj2_cat">Automatización Fiscal & IA</span>
+              <h3 class="project-title" data-i18n="proj2_title">Registro de Facturas con IA</h3>
+              <p class="project-description" data-i18n="proj2_desc">
+                Sistema de procesamiento de facturas mediante fotos. Utiliza IA vía API para extraer automáticamente datos fiscales necesarios y almacenarlos en base de datos, resolviendo complejas reglas de negocio solicitadas por clientes.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AI / LLM API</span>
+                <span class="tag">Database Design</span>
+                <span class="tag">OCR Workflow</span>
+                <span class="tag">Full Stack</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: RFID -->
+          <article class="card project-card">
+            <div class="project-content">
+              <span class="project-category" data-i18n="proj3_cat">Sistemas Industriales & Hardware</span>
+              <h3 class="project-title" data-i18n="proj3_title">Trazabilidad de Herramientas RFID</h3>
+              <p class="project-description" data-i18n="proj3_desc">
+                Sistema de control de inventario en galpones con tecnología RFID. Implementación de escaneos automáticos y manuales con resolución de desafíos de comunicación entre dispositivos físicos y aplicación de protocolos de red.
+              </p>
+              <div class="project-tags">
+                <span class="tag">RFID</span>
+                <span class="tag">Hardware Protocols</span>
+                <span class="tag">Low-level Comm</span>
+                <span class="tag">IoT / Industrial</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: CLUBING -->
+          <article class="card project-card">
+            <div class="project-content">
+              <span class="project-category" data-i18n="proj4_cat">Sistemas de Gestión / SaaS</span>
+              <h3 class="project-title">CLUBING</h3>
+              <p class="project-description" data-i18n="proj4_desc">
+                Plataforma integral para la gestión de clubes deportivos e instituciones. Permite administrar registro de socios, cobro de cuotas, alquiler de instalaciones, disciplinas deportivas y gestión de personal.
+              </p>
+              <div class="project-tags">
+                <span class="tag">ERP / SaaS</span>
+                <span class="tag">Full Stack</span>
+                <span class="tag">Business Logic</span>
+                <span class="tag">Relational DB</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="edu_title">Educación & Formación</h2>
+        <div class="timeline">
+          
+          <div class="card timeline-item">
+            <span class="timeline-date" data-i18n="edu1_date">En curso</span>
+            <h3>Ingeniería en Sistemas de Información</h3>
+            <p class="timeline-institution">Universidad Tecnológica Nacional (UTN)</p>
+          </div>
+
+          <div class="card timeline-item">
+            <span class="timeline-date" data-i18n="edu2_date">Graduado</span>
+            <h3 data-i18n="edu2_title">Técnico en Programación</h3>
+            <p class="timeline-institution">Instituto Técnico (ITAPU)</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section">
+      <div class="container text-center">
+        <h2 class="section-title" data-i18n="contact_title">¿Hablamos?</h2>
+        <p class="contact-subtitle" data-i18n="contact_desc">
+          Estoy disponible para sumarme a nuevos proyectos, desafíos laborales y oportunidades de desarrollo.
+        </p>
+        <p class="contact-phone">
+          <a href="tel:+5493584184346">📞 +54 9 3584184346</a>
+        </p>
+        <p class="contact-email">Email: facu.552007@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 - <span data-i18n="footer_rights">Diseñado y desarrollado con un enfoque minimalista.</span></p>
+    </div>
+  </footer>
+
+  <!-- JS SCRIPTS -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
